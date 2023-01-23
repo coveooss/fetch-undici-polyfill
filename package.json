@@ -29,6 +29,7 @@
     "undici": "latest"
   },
   "devDependencies": {
-    "fetch-undici-polyfill": "file:."
+    "fetch-undici-polyfill": "file:.",
+    "prettier": "^2.8.3"
   }
 }
