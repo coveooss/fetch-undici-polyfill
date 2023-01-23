@@ -1,8 +1,4 @@
-import type { fetch } from "undici";
+import type { fetch as fetchUndici } from "undici";
 declare global {
-  namespace NodeJS {
-    interface Global {
-      fetch: typeof fetch;
-    }
-  }
+  var fetch: typeof fetchUndici;
 }
