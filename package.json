@@ -1,0 +1,33 @@
+{
+  "name": "fetch-undici-polyfill",
+  "version": "1.0.0",
+  "description": "Polyfill fetch with undici implementation on NodeJS.",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
+  "scripts": {
+    "test": "node tests/with-polyfill.mjs && node tests/without-polyfill.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coveooss/fetch-undici-polyfill.git"
+  },
+  "keywords": [
+    "fetch",
+    "node",
+    "polyfill"
+  ],
+  "author": "Coveo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/coveooss/fetch-undici-polyfill/issues"
+  },
+  "homepage": "https://github.com/coveooss/fetch-undici-polyfill#readme",
+  "dependencies": {
+    "undici": "latest"
+  },
+  "devDependencies": {
+    "fetch-undici-polyfill": "file:."
+  }
+}
