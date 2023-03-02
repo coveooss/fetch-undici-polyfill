@@ -11,7 +11,7 @@
     "index.*"
   ],
   "scripts": {
-    "test": "node tests/with-polyfill.mjs && node tests/without-polyfill.mjs"
+    "test": "node tests/index.mjs"
   },
   "repository": {
     "type": "git",
