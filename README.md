@@ -4,15 +4,15 @@ Polyfill fetch with [undici](https://github.com/nodejs/undici) implementation on
 
 ## Usage
 
-Install: `npm i fetch-undici`
+Install: `npm i fetch-undici-polyfill`
 
 Code:
 
 ```js
 // ESM import
-import "fetch-undici";
+import "fetch-undici-polyfill";
 // CJS require
-require("fetch-undici");
+require("fetch-undici-polyfill");
 
 fetch("https://nyan.cat");
 ```
