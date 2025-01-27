@@ -4,6 +4,9 @@ on:
     branches:
       - main
   pull_request:
+permissions:
+  contents: read
+
 jobs:
   CI:
     name: CI
@@ -13,6 +16,11 @@ jobs:
       matrix:
         node: [16, 18]
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@cb605e52c26070c328afc4562f0b4ada7618a84e # v2.10.4
+        with:
+          egress-policy: audit
+
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3
       - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3
         with:
